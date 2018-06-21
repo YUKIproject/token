@@ -245,8 +245,8 @@ contract YUKI is ERC223, Ownable, Pausable {
   address public marketingFunds = 0x6771a091C97c79a52c8DD5d98A59c5d3B27F99aA;
   address public organization = 0xD90E1f987252b8EA71ac1cF14465FE9A3803267F;
 
-  mapping(address => uint256) public balanceOf;
-  mapping(address => mapping (address => uint256)) public allowance;
+  mapping (address => uint256) public balanceOf;
+  mapping (address => mapping (address => uint256)) public allowance;
   mapping (address => bool) public cannotSend;
   mapping (address => bool) public cannotReceive;
   mapping (address => uint256) public cannotSendUntil;
